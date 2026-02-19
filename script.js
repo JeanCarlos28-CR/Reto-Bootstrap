@@ -66,4 +66,18 @@ horas.forEach(hora=>{
     fila += "</tr>";
     cuerpo.innerHTML += fila;
 });
+
+const btn = document.getElementById("btnVista");
+const lista = document.getElementById("vistaLista");
+const calendario = document.getElementById("vistaCalendario");
+
+btn.addEventListener("click", ()=>{
+    lista.classList.toggle("d-none");
+    calendario.classList.toggle("d-none");
+    if(lista.classList.contains("d-none")){
+        btn.innerHTML = '<i class="bi bi-list"></i> Vista Lista';
+    } else {
+        btn.innerHTML = '<i class="bi bi-calendar3"></i> Vista Calendario';
+    }
+});
 });
