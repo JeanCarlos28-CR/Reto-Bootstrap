@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="icon" href="Recursos/mortarboard-fill.svg" type="image/svg+xml">
     <title>SIU-Web | Jean Cruz</title>
   </head>
 
@@ -35,6 +36,10 @@
             <h1 class="text-primary h4 mb-4 fw-bold mb-0 border-start border-4 border-primary ps-3">REPORTE OFICIAL DE HORARIOS</h1>
         </article>
         <div class="text-end mb-3">
+            <button id="btnVista" class="btn btn-outline-primary btn-sm d-inline-flex align-items-center gap-2">
+                <i class="bi bi-calendar3"></i>
+                Vista Calendario
+            </button>
             <button class="btn btn-outline-secondary btn-sm d-inline-flex align-items-center gap-2">
                 <i class="bi bi-printer"></i>
                 Imprimir
@@ -51,7 +56,7 @@
     </section>
 
     <section class="table-responsive">
-        <table class="table table-striped table-hover align-middle">
+        <table class="table table-striped table-hover align-middle mb-0 border rounded-4 overflow-hidden">
             <thead class="table-dark">
                 <tr class="text-center">
                     <th>CODIGO</th>
